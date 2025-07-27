@@ -1739,7 +1739,7 @@ input, select, textarea {
 		text-align: center;
 	}
 
-	/*	header.special:before, header.special:after {
+		header.special:before, header.special:after {
 			border-bottom: solid 1.5px;
 			border-top: solid 1.5px;
 			content: '';
@@ -1749,7 +1749,7 @@ input, select, textarea {
 			top: 1.75em;
 			width: 43%;
 		}
-*/
+
 		header.special:before {
 			left: 0;
 		}
@@ -2398,7 +2398,7 @@ input, select, textarea {
 						-webkit-transition: all 0.2s ease-in-out;
 						-ms-transition: all 0.2s ease-in-out;
 						transition: all 0.2s ease-in-out;
-						background: rgba(188, 202, 206, 0.15);
+						background: rgba(234, 224, 201, 0.15);
 					}
 
 					#header nav ul li.current > a {
