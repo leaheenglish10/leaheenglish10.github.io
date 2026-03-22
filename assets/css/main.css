@@ -2552,10 +2552,12 @@ input, select, textarea {
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			background: rgba(0, 26, 0, 0.5);
+			/* background: rgba(0, 26, 0, 0.5); */
+			background-image: url("../../images/starry.webp")
+			opacity: 0.5;
 			color: #fff;
 			display: inline-block;
-			opacity: 0;
+			/* opacity: 0; */
 			padding: 3em;
 			text-align: center;
 		}
