@@ -3344,15 +3344,5 @@ input, select, textarea {
 				height: 34px;
 			}
 
-		/* testing new header position */
-		#banner {
-		    position: absolute;
-		    top: 0;
-		    left: 0;
-		    width: auto;
-		    height: auto;
-		    padding: 1em;
-		    background: none;
-		}
 
 	}
