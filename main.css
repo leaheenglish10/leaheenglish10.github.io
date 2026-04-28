@@ -1,0 +1,70 @@
+
+/* CSS code for banner in side bar */
+#banner {
+		background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #001a00;
+
+		height: 250px;
+		weidth: 250px;
+		
+		background-image: url("../../images/TopBanner.jpg");
+		background-position: top left;
+		background-size: cover;
+		color: #fff;
+		cursor: default;
+		padding: 3em 0.5em
+		text-align: center;
+	}
+
+		#banner .inner {
+			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
+			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
+			animation: reveal-banner 1s 0.25s ease-in-out;
+			-moz-animation-fill-mode: forwards;
+			-webkit-animation-fill-mode: forwards;
+			-ms-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+			background: rgba(0, 26, 0, 0.35);
+			color: #fff;
+			display: inline-block;
+			opacity: 0;
+			padding: 2em; /* 3em */
+			text-align: center;
+		}
+
+			#banner .inner header {
+				display: inline-block;
+				border-bottom: solid 2px;
+				border-top: solid 2px;
+				margin: 0 0 2em 0;
+				padding: 3px 0 3px 0;
+			}
+
+				#banner .inner header h2 {
+					border-bottom: solid 1.5px;
+					border-top: solid 1.5px;
+					font-size: 1.5em;
+					font-weight: 500;
+					letter-spacing: 0.1em;
+					margin: 0;
+					padding-left: 0.025em;
+					position: relative;
+					text-transform: uppercase;
+				}
+
+			#banner .inner p {
+				letter-spacing: 0.1em;
+				margin: 0;
+				text-transform: uppercase;
+			}
+
+				#banner .inner p a {
+					color: inherit;
+					font-weight: 400;
+					text-decoration: none;
+				}
+
+			#banner .inner footer {
+				margin: 2em 0 0 0;
+			}
