@@ -136,7 +136,7 @@
 .mentor-text-content {
   display: flex;
   flex-direction: column; /* Forces text lines to stack vertically */
-  row-gap: 1px;
+  row-gap: 0.1%;
 }
 
 /* adding a pale purple hover */
