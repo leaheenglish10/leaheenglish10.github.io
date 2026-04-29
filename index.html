@@ -14,21 +14,22 @@
     .w3-sidebar {width: 200px;background: #222;}  /* Set the width of sidebar */
     #main {margin-left: 200px} /* Add left margin to "page content" to match width of sidebar */
     /* Remove margins from "page content" on small screens */
-   /* @media only screen and (max-width: 600px) {#main {margin-left: 0}} */ /*original phone media screen */
-	@media (max-width: 600px) { /* for phone */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}} /*original phone media screen */
+	/*  for adding sidebar to phone. Works, but need to figure out sizing of inner banner and navigation words
+		@media (max-width: 600px) {
     .w3-sidebar {width: 100px;background: #222;} 
     #main {margin-left: 100px}
 	#banner {width: 100px;}
-	}	
+	}	*/	
     </style>
   </head>
 <body class="w3-black">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<!-- <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="background-color: rgba(0, 26, 0, 0.50);"> -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="background-color: rgba(0, 26, 0, 0.50);"> 
 
-<nav class="w3-sidebar w3-bar-block w3-small w3-center" style="background-color: rgba(0, 26, 0, 0.50);">
-	<!-- gotta fix inner banner -->
+<!-- for not hiding on phone screen
+	<nav class="w3-sidebar w3-bar-block w3-small w3-center" style="background-color: rgba(0, 26, 0, 0.50);"> -->
 	<section id="banner">
 		<br />
 		<div class="inner">
