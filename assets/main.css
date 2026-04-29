@@ -48,7 +48,7 @@
 		height: 155px; /* 160 a TAD too tall, 150 a little too short */
 		width: 200px;
 		
-		background-image: url("images/TopBanner.jpg");
+		background-image: url("../images/TopBanner.jpg");
 		background-position: top left;
 		background-size: cover;
 		color: #fff;
