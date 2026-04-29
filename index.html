@@ -11,25 +11,16 @@
     <style>
     body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     .w3-row-padding img {margin-bottom: 12px}
-    .w3-sidebar {width: 200px;background: #222;}  /* Set the width of sidebar */
-    #main {margin-left: 200px} /* Add left margin to "page content" to match width of sidebar */
-    @media only screen and (max-width: 600px) {#main {margin-left: 0;margin-top:70px}} /* Remove margins from "page content" on small screens and adding margin on top when removing sidebar */
-	/*  for adding sidebar to phone. Works, but need to figure out sizing of inner banner and navigation words
-		@media (max-width: 600px) {
-    .w3-sidebar {width: 100px;background: #222;} 
-    #main {margin-left: 100px}
-	#banner {width: 100px;}
-	}	*/	
+    .w3-sidebar {width: 200px;background: #222;}  /* Set width of sidebar */
+    #main {margin-left: 200px} /* left margin to "page content" to match width of sidebar */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0;margin-top:70px}} /* Remove margins on small screens and top margin for top navigation bar */
     </style>
   </head>
 <body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<!-- Sidebar (hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="background-color:rgba(0, 26, 0, 1.0);"> 
- <!-- dark green background background-color: rgba(0, 26, 0, 0.50) -->
 
-<!-- for not hiding on phone screen
-	<nav class="w3-sidebar w3-bar-block w3-small w3-center" style="background-color: rgba(0, 26, 0, 0.50);"> -->
 	<section id="banner">
 		<br />
 		<div class="inner">
@@ -45,33 +36,26 @@
 
 
   <a href="#about" class="w3-bar-item w3-button w3-padding w3-hover-pale-green" style="background-color: rgba(0, 26, 0, 1);">
-   <!-- <i class="fa fa-home w3-xxlarge"></i> -->
     <p>ABOUT ME</p>
   </a>
   <a href="#stellarStreams" class="w3-bar-item w3-button w3-padding w3-hover-pale-green" style="background-color: rgba(0, 26, 0, 1);">
-    <!-- <i class="fa fa-user w3-xxlarge"></i> -->
     <p>STELLAR STREAMS</p>
   </a>
   <a href="#BSS" class="w3-bar-item w3-button w3-padding w3-hover-pale-green" style="background-color: rgba(0, 26, 0, 1);">
-  <!--  <i class="fa fa-book w3-xxlarge"></i> -->
     <p>BLUE STRAGGLERS</p>
   </a>
   <a href="#personalProjects" class="w3-bar-item w3-button w3-padding w3-hover-pale-green" style="background-color: rgba(0, 26, 0, 1);">
-  <!--  <i class="fa fa-envelope w3-xxlarge"></i> -->
     <p>PERSONAL PROJECTS</p>
   </a>
 	<a href="images/Resume.pdf" target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button w3-padding w3-hover-pale-green" style="background-color: rgba(0, 26, 0, 1);">
-   <!-- <i class="fa fa-home w3-xxlarge"></i> -->
     <p>RESUME</p>
   </a>
 	<a href="#" class="w3-bar-item w3-button w3-padding w3-hover-pale-green" style="background-color: rgba(0, 26, 0, 1);">
-   <!-- <i class="fa fa-home w3-xxlarge"></i> -->
     <p>PUBLICATIONS</p>
   </a>
 
 	<br />
 	<img src="images/GraduationImage.jpeg" style="width:75%;background-color:#ddffdd;padding:4px">
-	<!-- <p>leaheenglish10 [at] gmail [dot] com</p> testing new look -->
 	<a class="w3-bar-item w3-button w3-padding-small w3-pale-green w3-hover-pale-green">
     <p><b>leaheenglish10 [at] gmail [dot] com</b></p>
   </a>  
@@ -93,12 +77,12 @@
 	<!-- first image to show up, make this the movie and make it fit whole width and auto play -->
 	<img src="/images/galaxy-fig-insets-smaller.png" alt="simulation movie" class="w3-image" width="992" height="1108">
 
-<!-- add banner for mobile devices only when sidebar does not show up -->	
+<!-- banner for mobile devices -->	
 	<div class="mobile-only">
 
-		<section id="banner" style="height: 195px!important;width: 100%!important;display:flex!important;justify-content:center!important;align-items:center!important; "> <!-- manually, style="height: 195px!important;width: 345px!important;" -->
+		<section id="banner" style="height: 195px!important;width: 100%!important;display:flex!important;justify-content:center!important;align-items:center!important; "> 
 			<br />
-			<div class="inner" > <!-- manually, style="margin-left:65px!important; -->
+			<div class="inner" >
 				<header>
 					<h2>Leah English</h2>
 				</header>
@@ -113,7 +97,7 @@
 
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="about"> <!-- was w3-padding-16 -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="about">
 	  <a>  </a>
     <p><font size="+1">Hello! I am a recent graduate from Illinois Institute of Technology with an interest in computational astrophysics. 
       Specifically, I am interested in understanding the dynamics of galactic and cosmic evolution from large- to small- scale structure.
