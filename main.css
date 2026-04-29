@@ -38,8 +38,8 @@
 			#banner .inner header {
 				font-family: 'Lato', sans-serif;
 				display: inline-block;
-				border-bottom: solid 2px;
-				border-top: solid 2px;
+				border-bottom: solid 1.5px;
+				border-top: solid 1.5px;
 				margin: 0 0 2em 0;
 				padding: 3px 0 3px 0;
 			}
