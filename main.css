@@ -25,17 +25,14 @@
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			position: absolute; /* trying to center vetically */
-  			top: 50%;
-  			transform: translateY(-50%); /* Pulls the element back up by half its height */
 			background: rgba(0, 26, 0, 0.50); /* was 0.35 opacity */
 			color: #fff;
 			display: inline-block;
 			padding: 1em;
 			font-family: 'Lato', sans-serif;
 			text-align: center;
-			/* margin-left: 5px;
-			margin-right: 5px; taking out while using above position for centering */
+			margin-left: 5px;
+			margin-right: 5px;
 		}
 
 			#banner .inner header {
