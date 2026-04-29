@@ -126,6 +126,18 @@
   display: none;
 }
 
+/* for mentor sections */
+.mentor-container {
+  display: flex;       /* Positions children side-by-side */
+  align-items: start;  /* Keeps text at the top of the image */
+  gap: 20px;           /* Adds space between the image and the text */
+}
+
+.mentor-text-content {
+  display: flex;
+  flex-direction: column; /* Forces text lines to stack vertically */
+}
+
 /* Show only on screens smaller than 768px */
 @media screen and (max-width: 600px) {
   .mobile-only {
