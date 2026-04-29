@@ -4,7 +4,7 @@
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #001a00;
 
-		height: 175px;
+		height: 150px; /* 175 LITTLE TOO TALL */
 		width: 200px;
 		
 		background-image: url("images/TopBanner.jpg");
