@@ -1,3 +1,34 @@
+/* adding banner animations */
+@-webkit-keyframes reveal-banner {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-ms-keyframes reveal-banner {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes reveal-banner {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
 
 /* CSS code for banner in side bar */
 #banner {
