@@ -28,7 +28,7 @@
 			background: rgba(0, 26, 0, 0.35);
 			color: #fff;
 			display: inline-block;
-			opacity: 0;
+			opacity: 0.5; /* this was 0... maybe this was why it wasn't showing up? */
 			padding: 2em; /* 3em */
 			text-align: center;
 		}
