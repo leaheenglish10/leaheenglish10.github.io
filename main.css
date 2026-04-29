@@ -25,11 +25,10 @@
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			background: rgba(0, 26, 0, 0.35);
+			background: rgba(0, 26, 0, 0.50); /* was 0.35 opacity */
 			color: #fff;
 			display: inline-block;
-			/* opacity: 1.0; /* this was 0... maybe this was why it wasn't showing up? */
-			padding: 2em; /* 3em */
+			padding: 2em;
 			text-align: center;
 		}
 
