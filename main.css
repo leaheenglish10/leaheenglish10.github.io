@@ -45,7 +45,7 @@
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #001a00;
 
-		height: 160px; /* 175 LITTLE TOO TALL, 150 a little too short */
+		height: 155px; /* 160 a TAD too tall, 150 a little too short */
 		width: 200px;
 		
 		background-image: url("images/TopBanner.jpg");
@@ -72,9 +72,6 @@
 			padding: 1em;
 			font-family: 'Lato', sans-serif;
 			text-align: center;
-			/* margin-left: 5px;
-			margin-right: 5px;
-			margin-top: 5px; --> */
 		}
 
 			#banner .inner header {
