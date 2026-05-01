@@ -119,13 +119,6 @@
   text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
 }
 
-
-/* for mobile only things */
-/* Hide by default (for desktop/large screens) */
-.mobile-only {
-  display: none;
-}
-
 /* for mentor sections */
 .mentor-container {
   display: flex;       /* Positions children side-by-side */
