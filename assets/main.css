@@ -138,12 +138,21 @@
   color: black;             /* Change text color on hover */
 }
 
+
+
+/* for mobile only things */
+/* Hide by default (for desktop/large screens) */
+.mobile-only {
+  display: none;
+}
+
 /* Show only on screens smaller than 1000px */
 @media screen and (max-width: 800px) {
   .mobile-only {
     display: block; /* or inline-block, flex, etc. */
   }
 }
+
 
 /* hide on screens smaller than 1000 */
 @media screen and (max-width: 800px){
