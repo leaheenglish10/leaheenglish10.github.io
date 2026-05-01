@@ -20,22 +20,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // transitioning images for main slideshow
-// Array of your image URLs
-var slideIndex = 0;
-carousel();
+const images = [
+  "../movieImages/Figure 1 snapshot_000.png",
+  "../movieImages/Figure 1 snapshot_058.png",
+  "../movieImages/Figure 1 snapshot_138.png",
+  "../movieImages/Figure 1 snapshot_227.png"
+];
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  // Hide all images
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex++;
-  // Reset to first image if last is reached
-  if (slideIndex > x.length) {slideIndex = 1}
-  // Display current image instantly
-  x[slideIndex-1].style.display = "block";
-  // Change image every 3 seconds (3000ms)
-  setTimeout(carousel, 2000);
-}
+let currentIndex = 0;
+const slideElement = document.getElementById("mainSlide");
+
+function changeImage() {
+  // Move to next index, loop back to 0 if at the end
+  currentIndex = (currentIndex + 1) % images.length;
+  
+  // Directly change the source with no transition
+  slideElement.src = images[currentIndex];
