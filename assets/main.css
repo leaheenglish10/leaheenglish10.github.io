@@ -161,3 +161,29 @@
 	}
 }
 
+
+/* movie code? */
+.slideshow-container {
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.slides {
+  display: flex;
+  width: 80%;
+  height: auto;
+}
+
+.slide {
+  width: 80%;
+  flex-shrink: 0;
+  display: none; /* Hidden by default */
+}
+
+.slide.active {
+  display: block; /* Only show the active image */
+}
+
