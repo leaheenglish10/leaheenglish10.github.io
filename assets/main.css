@@ -164,26 +164,25 @@
 
 /* movie code? */
 .slideshow-container {
-  width: 80%;
-  height: auto;
-  overflow: hidden;
   position: relative;
-  margin: auto;
-}
-
-.slides {
-  display: flex;
   width: 80%;
-  height: auto;
+  max-width: 1000px; /* Adjust as needed */
+  height: 600px;    /* Adjust as needed */
+  margin: auto;
+  overflow: hidden;
 }
 
 .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 80%;
-  flex-shrink: 0;
-  display: none; /* Hidden by default */
+  height: auto;
+  object-fit: cover;
+  opacity: 0;
 }
 
 .slide.active {
-  display: block; /* Only show the active image */
+  opacity: 1;
 }
 
