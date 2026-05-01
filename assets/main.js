@@ -20,24 +20,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // transitioning images for main slideshow
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let slides = document.getElementsByClassName("mySlides");
-  
-  // Hide all slides
-/*  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  } */
-
-  slides.forEach(slide => slide.style.display = "none");
-  
-  // Increment index and reset if at end
-  slideIndex++;
-    // Display current slide instantly
-    slides[slideIndex].style.display = "block";
-    // Run again after 3 seconds (3000ms)
-    setTimeout(showSlides, 1000); 
-    if (slideIndex === slides.length) { slideIndex = 1; }
-}
