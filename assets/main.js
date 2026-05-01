@@ -39,5 +39,5 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";
   
   // Run again after 3 seconds (3000ms)
-  setTimeout(showSlides, 2000); 
+  setTimeout(showSlides, 1000); 
 }
