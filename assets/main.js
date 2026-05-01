@@ -20,19 +20,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // transitioning images for main slideshow
-const slides = document.querySelectorAll('.slide');
-let currentIndex = 0;
+let slideIndex = 0;
+showSlides();
 
-function nextSlide() {
-  // Remove active class from current image
-  slides[currentIndex].classList.remove('active');
+function showSlides() {
+  let slides = document.getElementsByClassName("mySlides");
   
-  // Move to next index, or back to 0 if at the end
-  currentIndex = (currentIndex + 1) % slides.length;
+  // Hide all slides
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
   
-  // Add active class to the new image
-  slides[currentIndex].classList.add('active');
+  // Increment index and reset if at end
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1; }
+  
+  // Display current slide instantly
+  slides[slideIndex - 1].style.display = "block";
+  
+  // Run again after 3 seconds (3000ms)
+  setTimeout(showSlides, 2000); 
 }
-
-// Change image every 2 seconds
-setInterval(nextSlide, 2000);
