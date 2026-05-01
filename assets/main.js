@@ -20,7 +20,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // transitioning images for main slideshow
-let slideIndex = 0;
+let slideIndex = 1;
 showSlides();
 
 function showSlides() {
