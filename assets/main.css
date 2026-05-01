@@ -163,8 +163,8 @@
 
 /* movie code?? */
 .slideshow-container {
-  width: 1000%;
-  position: relative;
+  width: 100%;
+  position: absolute;
   margin: auto;
   overflow: hidden;
 }
