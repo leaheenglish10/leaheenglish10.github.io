@@ -22,10 +22,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // transitioning images for main slideshow
 // Array of your image URLs
 const images = [
-  "Figure 1 snapshot_000.png",
-  "Figure 1 snapshot_058.png",
-  "Figure 1 snapshot_138.png",
-  "Figure 1 snapshot_227.png"
+  "../movieImages/Figure 1 snapshot_000.png",
+  "../movieImages/Figure 1 snapshot_058.png",
+  "../movieImages/Figure 1 snapshot_138.png",
+  "../movieImages/Figure 1 snapshot_227.png"
 ];
 
 let currentIndex = 0;
