@@ -20,20 +20,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // transitioning images for main slideshow
-const images = [
-  "../images/testFirstMovie.png",
-  "../movieImages/Figure 1 snapshot_000.png",
-  "../movieImages/Figure 1 snapshot_058.png",
-  "../movieImages/Figure 1 snapshot_138.png",
-  "../movieImages/Figure 1 snapshot_227.png"
-];
-
+const slides = document.querySelectorAll('.slide');
 let currentIndex = 0;
-const slideElement = document.getElementById("mainSlide");
 
-function changeImage() {
-  // Move to next index, loop back to 0 if at the end
-  currentIndex = (currentIndex + 1) % images.length;
+function nextSlide() {
+  // Remove active class from current image
+  slides[currentIndex].classList.remove('active');
   
-  // Directly change the source with no transition
-  slideElement.src = images[currentIndex];
+  // Move to next index, or back to 0 if at the end
+  currentIndex = (currentIndex + 1) % slides.length;
+  
+  // Add active class to the new image
+  slides[currentIndex].classList.add('active');
+}
+
+// Change image every 2 seconds
+setInterval(nextSlide, 2000);
