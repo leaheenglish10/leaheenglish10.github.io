@@ -35,11 +35,9 @@ function showSlides() {
   
   // Increment index and reset if at end
   slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1; }
-  
-  // Display current slide instantly
-  slides[slideIndex - 1].style.display = "block";
-  
-  // Run again after 3 seconds (3000ms)
-  setTimeout(showSlides, 1000); 
+    // Display current slide instantly
+    slides[slideIndex].style.display = "block";
+    // Run again after 3 seconds (3000ms)
+    setTimeout(showSlides, 1000); 
+    if (slideIndex === slides.length) { slideIndex = 1; }
 }
