@@ -161,21 +161,3 @@
 	}
 }
 
-
-
-
-
-
-
-
-
-
-/* movie code?? */
-/* .mySlides {
-  display: none;
-} */
-
-  /* Hide all images by default */
-  .slide { display: none; width: 80%; height: auto; }
-  /* Only show the active slide */
-  .active { display: block; }
