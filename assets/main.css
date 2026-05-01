@@ -168,45 +168,15 @@
 
 
 
-
-
-
 /* movie code?? */
-  :root {
-    /* --- CONFIGURATION --- */
-    --img-count: 4;         /* Total number of images */
-    --duration: 2s;         /* Time each image stays on screen */
-  }
+.slideshow-container {
+  width: 1000%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
 
-  .movie-container {
-    width: 100%;           /* Set your desired width */
-    height: auto;          /* Set your desired height */
-    overflow: hidden;
-    position: relative;
-    border: 5px solid #333;
-  }
-
-  .movie-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;      /* Keeps images from stretching */
-    position: absolute;
-    opacity: 0;             /* Hide all images by default */
-    
-    /* Calculate total loop time: count * duration */
-    animation: movie-loop calc(var(--img-count) * var(--duration)) infinite step-end;
-  }
-
-  /* Delay each image so they play in sequence */
-  .movie-container img:nth-child(1) { animation-delay: calc(var(--duration) * 0); }
-  .movie-container img:nth-child(2) { animation-delay: calc(var(--duration) * 1); }
-  .movie-container img:nth-child(3) { animation-delay: calc(var(--duration) * 2); }
-  .movie-container img:nth-child(4) { animation-delay: calc(var(--duration) * 3); }
-
-  @keyframes movie-loop {
-    0% { opacity: 1; }
-    /* The image stays visible for 1/count of the total time */
-    calc(100% / var(--img-count)) { opacity: 0; }
-    100% { opacity: 0; }
-  }
+#mainSlide {
+  display: block;
+}
 
