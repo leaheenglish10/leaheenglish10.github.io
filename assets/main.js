@@ -20,16 +20,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // transitioning images for main slideshow
-let slideIndex = 1;
+let slideIndex = 0;
 showSlides();
 
 function showSlides() {
   let slides = document.getElementsByClassName("mySlides");
   
   // Hide all slides
-  for (let i = 0; i < slides.length; i++) {
+/*  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-  }
+  } */
+
+  slides.forEach(slide => slide.style.display = "none");
   
   // Increment index and reset if at end
   slideIndex++;
