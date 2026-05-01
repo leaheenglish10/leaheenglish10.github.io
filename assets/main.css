@@ -145,9 +145,16 @@
   color: black;             /* Change text color on hover */
 }
 
-/* Show only on screens smaller than 600px */
+/* Show only on screens smaller than 1000px */
 @media screen and (max-width: 1000px) {
   .mobile-only {
+    display: block; /* or inline-block, flex, etc. */
+  }
+}
+
+/* show only on screens larger than 1000px */
+@media screen and (min-width: 1001px) {
+  .large-only {
     display: block; /* or inline-block, flex, etc. */
   }
 }
