@@ -146,14 +146,14 @@
 }
 
 /* Show only on screens smaller than 1000px */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .mobile-only {
     display: block; /* or inline-block, flex, etc. */
   }
 }
 
 /* hide on screens smaller than 1000 */
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 900px){
 	.hide-small{
 		display:none!important;
 	}
