@@ -152,7 +152,9 @@
   }
 }
 
-/* w3-hide-small code, change to 1000 */
-@media (max-width:1000px){
-	{hide-small{display:none!important}
+/* hide on screens smaller than 1000 */
+@media screen and (max-width: 1000px){
+	.hide-small{
+		display:none!important;
+	}
 }
