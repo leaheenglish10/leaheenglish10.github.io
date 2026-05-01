@@ -21,6 +21,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // transitioning images for main slideshow
 const images = [
+  "../images/testFirstMovie.png",
   "../movieImages/Figure 1 snapshot_000.png",
   "../movieImages/Figure 1 snapshot_058.png",
   "../movieImages/Figure 1 snapshot_138.png",
