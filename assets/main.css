@@ -152,9 +152,7 @@
   }
 }
 
-/* show only on screens larger than 1000px */
-@media screen and (min-width: 1001px) {
-  .large-only {
-    display: block; /* or inline-block, flex, etc. */
-  }
+/* w3-hide-small code, change to 1000 */
+@media (max-width:1000px){
+	{hide-small{display:none!important}
 }
