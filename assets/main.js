@@ -20,6 +20,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // transitioning images for main slideshow
+// old one that works
+/*
 let slideIndex = 0;
 showSlides();
 
@@ -41,3 +43,16 @@ function showSlides() {
   // Run again after 3 seconds (3000ms)
   setTimeout(showSlides, 1000); 
 }
+*/
+
+  let index = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function nextSlide() {
+    slides[index].classList.remove("active"); // Hide current
+    index = (index + 1) % slides.length;      // Loop back to 0 at end
+    slides[index].classList.add("active");    // Show next
+  }
+
+  // Starts automatically and loops every 3 seconds
+  setInterval(nextSlide, 1000);
