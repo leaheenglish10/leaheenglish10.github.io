@@ -146,20 +146,26 @@
   display: none;
 }
 
-/* Show only on screens smaller than 1000px */
-@media screen and (max-width: 800px) {
+/* small screens <600px (phones */
+@media screen and (max-width: 600px) {
+	/* show only on small screens */
   .mobile-only {
     display: block; /* or inline-block, flex, etc. */
+  }
+
+  /* hide on small screens */	
+  .hide-small{
+	display:none!important;
   }
 }
 
 
-/* hide on screens smaller than 1000 */
+/* hide on screens smaller than 1000
 @media screen and (max-width: 800px){
 	.hide-small{
 		display:none!important;
 	}
-}
+} */
 
 
 /* movie code? */
