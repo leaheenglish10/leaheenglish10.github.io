@@ -176,7 +176,7 @@
 	
 	@media screen and (max-width: 800px) {
 	/* show only on small screens */
-	  .mobile-only {
+	  .small-only {
 	    display: block; /* or inline-block, flex, etc. */
 	  }
 	
@@ -185,12 +185,6 @@
 		display:none!important;
 	  }
 	}
-
-
-/* hide on screens smaller than 1000
-@media screen and (max-width: 800px){
-	.hide-small{
-		display:none!important; */
 
 
 /* for small-mid screens (601-800px) */
