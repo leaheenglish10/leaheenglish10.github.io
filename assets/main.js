@@ -57,4 +57,4 @@ function showNextImage() {
 }
 
 // change image every 1 second (1000 ms)
-setInterval(showNextImage, 500);
+setInterval(showNextImage, 800);
