@@ -187,15 +187,20 @@
 	}
 
 
-/* for small-mid screens (601-800px) */
+/* for small-mid screens (601-800px, horizontal phones) */
 	/* hide by default */
-  .only-mid-size {
+  .small-mid-only {
     display: none;
   }
 
   @media screen and (min-width: 601px) and (max-width: 800px) {
-	  /* Show only between 600px and 900px */
-    .only-mid-size {
-      display: block; /* Show only between 600px and 900px */
+	  /* Show only on small-mid screens */
+    .small-mid-only {
+      display: block;
     }
+
+	/* hide on small-mid screens */	
+	  .hide-small-mid{
+		display:none!important;
+	  }  
   }
