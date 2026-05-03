@@ -164,12 +164,14 @@
 
 /* movie code? */
 .slideshow-container {
-  position: relative;
+  /* position: relative;
   width: 100%;
   /* max-width: 1000px; /* Adjust as needed */
   /* max-height: 600px;    /* Adjust as needed */
-  margin: auto;
-  /* overflow: hidden; */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; 
+  /* margin: auto; */
 }
 
 .slideshow {
