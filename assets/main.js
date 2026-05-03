@@ -40,11 +40,12 @@ setInterval(showNextSlide, 1000); */
 
 // testing
 const images = [
-  "../images/slideshowFourths/snapshot_000.png",
-  "../images/slideshowFourths/snapshot_060.png",
-  "../images/slideshowFourths/snapshot_120.png",
-  "../images/slideshowFourths/snapshot_180.png",
-  "../images/slideshowFourths/snapshot_240.png"
+  "../images/slideshowFifths/snapshot_000.png",
+  "../images/slideshowFifths/snapshot_048.png",
+  "../images/slideshowFifths/snapshot_096.png",
+  "../images/slideshowFifths/snapshot_144.png",
+  "../images/slideshowFifths/snapshot_192.png",
+  "../images/slideshowFifths/snapshot_240.png"
 ];
 
 let index = 0;
