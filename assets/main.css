@@ -40,124 +40,152 @@
 	}
 
 
-/* CSS code for banner in side bar */
-#banner {
-		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #001a00;
-
-		height: 155px;
-		width: 225px;
-		
-		background-image: url("../images/TopBanner.jpg");
-		background-position: top left;
-		background-size: cover;
-		color: #fff;
-		cursor: default;
-		padding: 3em 0.5em
-		text-align: center;
-	}
-
-		#banner .inner {
-			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
-			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
-			animation: reveal-banner 1s 0.25s ease-in-out;
-			-moz-animation-fill-mode: forwards;
-			-webkit-animation-fill-mode: forwards;
-			-ms-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
-			background: rgba(0, 26, 0, 0.50); /* was 0.35 opacity */
+/* banner inside bar */
+	#banner {
+			background-attachment: scroll, scroll, scroll, fixed;
+			background-color: #001a00;
+	
+			height: 155px;
+			width: 225px;
+			
+			background-image: url("../images/TopBanner.jpg");
+			background-position: top left;
+			background-size: cover;
 			color: #fff;
-			display: inline-block;
-			padding: 1em;
-			font-family: 'Lato', sans-serif;
+			cursor: default;
+			padding: 3em 0.5em
 			text-align: center;
 		}
-
-			#banner .inner header {
-				font-family: 'Lato', sans-serif;
+	
+			#banner .inner {
+				-moz-animation: reveal-banner 1s 0.25s ease-in-out;
+				-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+				-ms-animation: reveal-banner 1s 0.25s ease-in-out;
+				animation: reveal-banner 1s 0.25s ease-in-out;
+				-moz-animation-fill-mode: forwards;
+				-webkit-animation-fill-mode: forwards;
+				-ms-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+				background: rgba(0, 26, 0, 0.50); /* was 0.35 opacity */
+				color: #fff;
 				display: inline-block;
-				border-bottom: solid 1.5px;
-				border-top: solid 1.5px;
-				margin: 0 0 2em 0;
-				padding: 3px 0 3px 0;
+				padding: 1em;
+				font-family: 'Lato', sans-serif;
+				text-align: center;
 			}
-
-				#banner .inner header h2 {
+	
+				#banner .inner header {
 					font-family: 'Lato', sans-serif;
+					display: inline-block;
 					border-bottom: solid 1.5px;
 					border-top: solid 1.5px;
-					font-size: 1.5em;
-					font-weight: 500;
+					margin: 0 0 2em 0;
+					padding: 3px 0 3px 0;
+				}
+	
+					#banner .inner header h2 {
+						font-family: 'Lato', sans-serif;
+						border-bottom: solid 1.5px;
+						border-top: solid 1.5px;
+						font-size: 1.5em;
+						font-weight: 500;
+						letter-spacing: 0.1em;
+						margin: 0;
+						padding-left: 0.025em;
+						position: relative;
+						text-transform: uppercase;
+					}
+	
+				#banner .inner p {
+					font-family: 'Lato', sans-serif;
 					letter-spacing: 0.1em;
 					margin: 0;
-					padding-left: 0.025em;
-					position: relative;
 					text-transform: uppercase;
 				}
-
-			#banner .inner p {
-				font-family: 'Lato', sans-serif;
-				letter-spacing: 0.1em;
-				margin: 0;
-				text-transform: uppercase;
-			}
-
-				#banner .inner p a {
-					font-family: 'Lato', sans-serif;
-					color: inherit;
-					font-weight: 400;
-					text-decoration: none;
+	
+					#banner .inner p a {
+						font-family: 'Lato', sans-serif;
+						color: inherit;
+						font-weight: 400;
+						text-decoration: none;
+					}
+	
+				#banner .inner footer {
+					margin: 2em 0 0 0;
 				}
 
-			#banner .inner footer {
-				margin: 2em 0 0 0;
-			}
-
 /* hovered over text gets a shadow */
-.hover-bold-smooth:hover {
-  text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
-}
+	.hover-bold-smooth:hover {
+	  text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
+	}
+
 
 /* for mentor sections */
-.mentor-container {
-  display: flex;       /* Positions children side-by-side */
-  align-items: start;  /* Keeps text at the top of the image */
-  gap: 20px;           /* Adds space between the image and the text */
-}
+	.mentor-container {
+	  display: flex;       /* Positions children side-by-side */
+	  align-items: start;  /* Keeps text at the top of the image */
+	  gap: 20px;           /* Adds space between the image and the text */
+	}
+	
+	.mentor-text-content {
+	  display: flex;
+	  flex-direction: column; /* Forces text lines to stack vertically */
+	  row-gap: 0.1%;
+	}
 
-.mentor-text-content {
-  display: flex;
-  flex-direction: column; /* Forces text lines to stack vertically */
-  row-gap: 0.1%;
-}
 
 /* adding a pale purple hover */
-.hover-pale-purple:hover {
-  background-color:#966fd6; /* Change background color on hover */
-  color: black;             /* Change text color on hover */
-}
+	.hover-pale-purple:hover {
+	  background-color:#966fd6; /* Change background color on hover */
+	  color: black;             /* Change text color on hover */
+	}
+
+/* slideshow code */
+	.slideshow-container {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+	
+	.slideshow {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* for mobile only things */
-/* Hide by default (for desktop/large screens) */
-.mobile-only {
-  display: none;
-}
-
-/* small screens <600px (phones */
-@media screen and (max-width: 600px) {
-	/* show only on small screens */
-  .mobile-only {
-    display: block; /* or inline-block, flex, etc. */
-  }
-
-  /* hide on small screens */	
-  .hide-small{
-	display:none!important;
-  }
-}
+	/* Hide by default (for desktop/large screens) */
+	.mobile-only {
+	  display: none;
+	}
+	
+	/* small screens <600px (phones */
+	@media screen and (max-width: 600px) {
+		/* show only on small screens */
+	  .mobile-only {
+	    display: block; /* or inline-block, flex, etc. */
+	  }
+	
+	  /* hide on small screens */	
+	  .hide-small{
+		display:none!important;
+	  }
+	}
 
 
 /* hide on screens smaller than 1000
@@ -166,30 +194,3 @@
 		display:none!important;
 	}
 } */
-
-
-/* movie code? */
-.slideshow-container {
-  /* position: relative;
-  width: 100%;
-  /* max-width: 1000px; /* Adjust as needed */
-  /* max-height: 600px;    /* Adjust as needed */
-  display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; 
-  /* margin: auto; */
-}
-
-.slideshow {
- /*  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70%;
-  height: auto;
-  object-fit: cover; */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
