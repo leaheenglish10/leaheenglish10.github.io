@@ -165,11 +165,11 @@
 /* movie code? */
 .slideshow-container {
   position: relative;
-  width: 70%;
+  width: 100%;
   max-width: 1000px; /* Adjust as needed */
-  height: 600px;    /* Adjust as needed */
+  max-height: 600px;    /* Adjust as needed */
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .slideshow {
