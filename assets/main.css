@@ -168,20 +168,19 @@
 
 
 
-/* for mobile only things */
+/* for small screens only (<600px) */
 	/* Hide by default (for desktop/large screens) */
-	.mobile-only {
-	  display: none;
-	}
+		.mobile-only {
+		  display: none;
+		}
 	
-	/* small screens <600px (phones */
-	@media screen and (max-width: 600px) {
-		/* show only on small screens */
+	@media screen and (max-width: 800px) {
+	/* show only on small screens */
 	  .mobile-only {
 	    display: block; /* or inline-block, flex, etc. */
 	  }
 	
-	  /* hide on small screens */	
+	/* hide on small screens */	
 	  .hide-small{
 		display:none!important;
 	  }
@@ -191,6 +190,18 @@
 /* hide on screens smaller than 1000
 @media screen and (max-width: 800px){
 	.hide-small{
-		display:none!important;
-	}
-} */
+		display:none!important; */
+
+
+/* for small-mid screens (601-800px) */
+	/* hide by default */
+  .only-mid-size {
+    display: none;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 800px) {
+	  /* Show only between 600px and 900px */
+    .only-mid-size {
+      display: block; /* Show only between 600px and 900px */
+    }
+  }
