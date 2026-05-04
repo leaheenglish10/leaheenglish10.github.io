@@ -19,26 +19,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
-// transitioning images for main slideshow
-/* const slides = document.querySelectorAll('.slide');
-let currentIndex = 0;
-
-function showNextSlide() {
-  // Remove active class from current image
-  slides[currentIndex].classList.remove('active');
-  
-  // Increment index or loop back to 0
-  currentIndex = (currentIndex + 1) % slides.length;
-  
-  // Add active class to next image
-  slides[currentIndex].classList.add('active');
-}
-
-// Change image every 3 seconds
-setInterval(showNextSlide, 1000); */
-
-
-// testing
+// slideshow
 const images = [
   "../images/slideshowFifths/snapshot_000.png",
   "../images/slideshowFifths/snapshot_048.png",
@@ -50,10 +31,12 @@ const images = [
 
 let index = 0;
 const slideshow = document.getElementById("slideshow");
+const slideshow-small = document.getElementByID("slideshow-small");
 
 function showNextImage() {
   index = (index + 1) % images.length; // loops back to 0
   slideshow.src = images[index];
+  slideshow-small.src = images[index];
 }
 
 // change image every 1 second (1000 ms)
