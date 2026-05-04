@@ -170,7 +170,7 @@
 
 /* for small screens only (<600px) vertical phones*/
 	/* Hide by default (for desktop/large screens) */
-		.mobile-only {
+		.small-only {
 		  display: none;
 		}
 	
