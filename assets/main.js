@@ -31,12 +31,10 @@ const images = [
 
 let index = 0;
 const slideshow = document.getElementById("slideshow");
-const slideshow-small = document.getElementByID("slideshow-small");
 
 function showNextImage() {
   index = (index + 1) % images.length; // loops back to 0
   slideshow.src = images[index];
-  slideshow-small.src = images[index];
 }
 
 // change image every 1 second (1000 ms)
