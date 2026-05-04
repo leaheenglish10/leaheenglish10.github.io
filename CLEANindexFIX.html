@@ -19,8 +19,8 @@
   </head>
 <body class="w3-black">
 
-<!-- Sidebar (hidden on small and mid-small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small hide-small w3-center" style="background-color:#4e0707;display: flex;flex-direction: column;min-height:1200px;overflow-y: auto;">
+<!-- SIDEBAR (hidden on small and mid-small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small hide-small hide-small-mid w3-center" style="background-color:#4e0707;display: flex;flex-direction: column;min-height:1200px;overflow-y: auto;">
 	<section id="banner" style="z-index: 1000;">
 		<br />
 		<div class="inner">
@@ -50,13 +50,9 @@
 	<a href="images/Resume.pdf" target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button w3-padding-small w3-hover-pale-red hover-bold-smooth" style="background-color:#4e0707;z-index: 100;">
     <p>RESUME</p>
   </a>
-	<!-- <a href="#" class="w3-bar-item w3-button w3-padding-small w3-hover-pale-red hover-bold-smooth" style="background-color:#4e0707;">
-    <p>    </p>
-  </a> -->
+  <br />
 
-	<br />
-
-	<!-- testing anchoring pic to bottom of sidebar -->
+	<!-- info @ bottom of sidebar -->
 	<div style="position: fixed; bottom: 0; width: 225px;">
 		<img src="images/GraduationImage.jpeg" style="width:75%;background-color:#ff4b3e;padding:4px;z-index: 10;">
 		<a class="w3-bar-item w3-padding-small w3-button w3-hover-pale-red" style="background-color:#ff4b3e;padding:2px 4px!important;z-index: 500;"> 
@@ -64,10 +60,11 @@
 	  	</a>
 	</div>
 	
+<!-- END SIDEBAR -->	
 </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top small-only" id="myNavbar">
+<!-- Navbar on small and small-mid screens (Hidden on medium and large screens) -->
+<div class="w3-top small-only small-mid-only hide-mid hide-big" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT ME<br /><br /><br /></a>
     <a href="#stellarStreams" class="w3-bar-item w3-button" style="width:25% !important">STELLAR STREAMS<br /><br /></a>
@@ -75,8 +72,9 @@
     <a href="#personalProjects" class="w3-bar-item w3-button" style="width:25% !important">PERSONAL PROJECTS<br /><br /></a>
   </div>
 </div>
+	
 
-<!-- Page Content -->
+<!-- PAGE CONTENT -->
 <div id="main" style="padding:12px 50px">
 
 	
@@ -85,13 +83,8 @@
 	</div>
 
 
-<!-- banner for mobile devices -->	
-	<div class="small-only">
-
-			<!-- <div class="slideshow-container">
-				<img id="slideshow" src="images/slideshowFifths/snapshot_000.png" alt="slide">
-			</div> -->
-
+<!-- banner for small and small-mid screens -->	
+	<div class="small-only small-mid-only hide-mid hide-big">
 		<section id="banner" style="height: 195px!important;width: 100%!important;display:flex!important;justify-content:center!important;align-items:center!important; "> 
 			<br />
 			<div class="inner" >
@@ -104,11 +97,10 @@
 				<br />
 			</div>
 		</section>
-	
 	</div>
 
 
-  <!-- About Section -->
+  <!-- ABOUT SECTION -->
   <div class="w3-justify w3-text-grey" id="about" style="padding:25px 50px; max-width:1800px;background-color:black;"> 
     <p><font size="+1" >Hello! I am a recent graduate from Illinois Institute of Technology with an interest in computational astrophysics. 
       Specifically, I am interested in understanding the dynamics of galactic and cosmic evolution from large- to small- scale structure.
@@ -119,8 +111,8 @@
       I have research experience in both galactic and stellar astrophysics (more below). Outside of academics, I enjoy reading, hiking, going to concerts, and making syrups for my morning lattes.
     </font></p>
 	<br />
-	    <!-- About Me Photo section for large screens -->
-		<div class="mentor-container hide-small">
+	    <!-- About Me Photo section for large, mid, and small-mid screens -->
+		<div class="mentor-container big-only mid-only small-mid-only hide-small">
 		  <img src="images/AboutMePhoto.png" alt="Leah English" style="width:200px">
 		  <div class="mentor-text-content">
 		    <a class="w3-bar-item w3-button w3-padding-small w3-light-green w3-hover-pale-green hover-bold-smooth">
@@ -134,7 +126,7 @@
 		  </div>
 		</div>	
 	  	<!-- About Me Photo section for small screen -->
-	    <div class="small-only">
+	    <div class="small-only hide-big hide-mid hide-small-mid">
 			<img src="images/AboutMePhoto.png" alt="Leah English" style="width:225px">
 			<a><p>   </p></a>
 			<a class="w3-bar-item w3-button w3-padding-small w3-light-green w3-hover-pale-green hover-bold-smooth" style="font-size: 10px;">
@@ -146,12 +138,12 @@
 		    </button></a>  
 		</div>
 
-	<!-- End of About section -->  
+	<!-- END OF ABOUT SECTION -->  
 	</div>
 
 <div style="height: 75px;background-color: transparent;"></div> <!-- break for space -->
 	
-  <!-- Stellar Streams -->
+<!-- STELLAR STREAMS -->
   <div id="stellarStreams" style="padding:25px 50px; max-width:1800px;background-color:black;"> <!-- class="w3-padding-64" -->
     <h1 class="w3-text-light-grey" style="margin:5px 0!important;">Stellar Streams</h1>
     <hr style="width:270px" class="w3-opacity">
@@ -167,65 +159,70 @@
 		</button></a>
 	  <br />
 
-	  <!-- mentor section -->
-	  <div class="mentor-container">
-		  <img class="hide-small" src="images/TjitskeStarkenburg.jpg" alt="Tjitske Starkenburg" style="width:225px;height:auto;"> <!-- 50% too large, tho good on phone, maybe see if on phone I can make it 50% -->
-		  <div class="small-only"> <img src="images/TjitskeStarkenburg.jpg" alt="Tjitske Starkenburg" style="width:175px;height:auto;"></div> <!-- make photo bigger on phone -->
+	  <!-- Tjitske section for large, mid, and small-mid screens-->
+	  <div class="mentor-container big-only mid-only small-mid-only hide-small">
+		  <img src="images/TjitskeStarkenburg.jpg" alt="Tjitske Starkenburg" style="width:225px;height:auto;">
 		  <div class="mentor-text-content">
 		    <h2 style="margin-bottom:0.09%;"><b>Mentor</b></h2>
 		    <p style="margin-bottom:0.09%;font-size: 20px;">Tjitske Starkenburg</p>
 		    <p style="margin-bottom:0.15%;font-size: 20px;">Northwestern University</p>
 			<!-- change purple to my own pale purple hover bc that kinda rought -->  
 			<a href="https://tstarkenburg.github.io/" target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button w3-padding w3-deep-purple hover-pale-purple hover-bold-smooth" style="margin-top:2px">
-		    <p>link to website</p>
-		 	</a>
+				<p>link to website</p>
+			</a>
 		  </div>
 		</div>
 
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-		<br />
+	  <!-- Tjitske section for small screens-->
+	  <div class="small-only hide-big hide-mid hide-small-mid"> 
+		  <h2 style="margin-bottom:0.09%;"><b>Mentor</b></h2>
+		  <img src="images/TjitskeStarkenburg.jpg" alt="Tjitske Starkenburg" style="width:175px;height:auto;">
+	  	  <p style="margin-bottom:0.09%;font-size: 20px;">Tjitske Starkenburg</p>
+		  <p style="margin-bottom:0.15%;font-size: 20px;">Northwestern University</p>
+	  	  <a href="https://tstarkenburg.github.io/" target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button w3-padding w3-deep-purple hover-pale-purple hover-bold-smooth" style="margin-top:2px">
+			<p>link to website</p>
+		  </a>
+  	  </div>
+
+	<br />
 		
-      <!-- where I should add link to research note or poster --> <h3><a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260213385C/abstract" target="_blank"
-      style="text-decoration: none;">Dancing Stellar Streams in Merging Dark Matter Halos</a></h3>
-      <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260213385C/abstract" target="_blank">
-      <!-- <img src="images/testPotentialPlotLast.png" style="width:100%"> -->
+      <h3><a style="text-decoration: none;">Dancing Stellar Streams in Merging Dark Matter Halos</a></h3>
+      <a >
 		  <video autoplay muted loop playsinline style="width:100%">
 		  	<source src="images/potentialPlotMovie.mp4" type="video/mp4">
 		  	Your browser does not support the video tag.
 		  </video>
       </a>
       <div class="w3-justify w3-text-grey">
-      <p>Stellar Streams are groups of stars orbiting a galaxy's outer edges and are likely formed via globular clusters or dwarf galaxies that have been tidally stripped. My work analyzes simulations of these streams to see what they may tell us about a galaxy's mass distribution and formation history. In addition, I compare different particle spray methods of modelling stellar streams to help compare to the accuracy of a new stellar stream production code.
+      	<p>Stellar Streams are groups of stars orbiting a galaxy's outer edges and are likely formed via globular clusters or dwarf galaxies that have been tidally stripped. My work analyzes simulations of these streams to see what they may tell us about a galaxy's mass distribution and formation history.
       </p>
 		  
       </div>
       <br>
 
     <div class="w3-row-padding" style="margin:0 -16px">
-      <!-- where I should add link to research note or poster --> <h3><a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260213385C/abstract" target="_blank"
-      style="text-decoration: none;">N-Body Code</a></h3>
+     <h3><a style="text-decoration: none;">N-Body Code</a></h3>
 		<a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260213385C/abstract" target="_blank" rel="noopener noreferrer"><button class="w3-button w3-light-green w3-hover-pale-green w3-padding-large w3-section hover-bold-smooth">
 		  Co-author Arxiv Paper!
 		</button></a>	
-      <!-- <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260213385C/abstract" target="_blank">
+		<div class="w3-justify w3-text-grey">
+		 In addition, I compare different particle spray methods of modelling stellar streams to help compare to the accuracy of a new stellar stream production code
+		</p>
+		</div>	
+		<!-- <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260213385C/abstract" target="_blank">
       <img src="/images/fig-2022a.png" style="width:80%">
       </a> -->
-      <div class="w3-content w3-justify w3-text-grey">
-      <p>Section Under construction!
-      </p>
 	  
       </div>
- 	</div>
-	</div>
 
-</div>
+	<!-- END OF STELLAR STREAMS -->  
+ 	</div>
 
 
 <div style="height: 75px;background-color: transparent;"></div>
 
 
-<!-- Blue Straggler Stars -->
+<!-- BLUE STRAGGLER STARS -->
 <div id="BSS" style="padding:25px 50px; max-width:1800px;background-color:black;">
       <h1 class="w3-text-light-grey" >Blue Straggler Stars</h1>
       <hr style="width:355px" class="w3-opacity">
@@ -240,33 +237,42 @@
 		   Research Note on the way...
 		</button></a>
 		<br />
-	  <!-- mentor section -->
-	  <div class="mentor-container">
-		  <img class="hide-small" src="images/EmilyLeiner.jpg" alt="Tjitske Starkenburg" style="width:208px;height:auto;"> <!-- 50% too large, tho good on phone, maybe see if on phone I can make it 50% -->
-		  <div class="small-only"> <img src="images/EmilyLeiner.jpg" alt="Emily Leiner" style="width:138px;height:auto;"></div> <!-- make photo bigger on phone -->
+	
+	  <!-- Leiner section for big, mid, and small-mid screens -->
+	  <div class="mentor-container big-only mid-only small-mid-only hide-small">
+		  <img src="images/EmilyLeiner.jpg" alt="Tjitske Starkenburg" style="width:208px;height:auto;">
 		  <div class="mentor-text-content">
 		    <h2 style="margin-bottom:0.09%;"><b>Mentor</b></h2>
 		    <p style="margin-bottom:0.09%;font-size: 20px;">Emily Leiner</p>
 		    <p style="margin-bottom:0.15%;font-size: 20px;">Illinois Institute of Technology</p>
-			<!-- change purple to my own pale purple hover bc that kinda rought -->  
 			<a href="https://www.iit.edu/directory/people/emily-leiner" target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button w3-padding w3-deep-purple hover-pale-purple hover-bold-smooth" style="margin-top:2px">
 		    <p>link to website</p>
 		 	</a>
 		  </div>
 		</div>	
 
+	<!-- Leiner section for small screens -->
+	<div class="small-only hide-big hide-mid hide-small-mid"> 
+		<h2 style="margin-bottom:0.09%;"><b>Mentor</b></h2>
+		<img src="images/EmilyLeiner.jpg" alt="Emily Leiner" style="width:138px;height:auto;">
+		<p style="margin-bottom:0.09%;font-size: 20px;">Emily Leiner</p>
+		<p style="margin-bottom:0.15%;font-size: 20px;">Illinois Institute of Technology</p>
+		<a href="https://www.iit.edu/directory/people/emily-leiner" target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button w3-padding w3-deep-purple hover-pale-purple hover-bold-smooth" style="margin-top:2px">
+		<p>link to website</p>
+		</a>
+	</div>
+
 		
       <a href="https://www.nasa.gov/image-article/double-trouble-white-dwarf-surprises-astronomers/" target="_blank">
       <img src="images/binaryMT.jpeg" style="width:75%;clip-path: inset(50px 0 50px 0);display: block;margin-left: auto;margin-right: auto;">
       </a>
-	  <!-- where I should add link to research note or poster --> <h3><a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.3470J/abstract" target="_blank"
-      style="text-decoration: none;">Mass Transfer in Blue Straggler Star - White Dwarf Binary Star Systems</a></h3>	
+	  <h3><a style="text-decoration: none;">Mass Transfer in Blue Straggler Star - White Dwarf Binary Star Systems</a></h3>	
       <div class="w3-justify w3-text-grey">
-      <p><font size="+1"> Blue Straggler Stars are stars that appear more luminous and bluer than expected and are theorized to have formed via mass transfer. My models explore how two observed binary systems with blue straggler stars and white dwarf companions evolve while undergoing various types of mass transfer. These systems are interesting as they may be progenitors to observed systems whose origins we are currently unsure of.
-      </font></p>
-		  
-	
+	      <p><font size="+1"> Blue Straggler Stars are stars that appear more luminous and bluer than expected and are theorized to have formed via mass transfer. My models explore how two observed binary systems with blue straggler stars and white dwarf companions evolve while undergoing various types of mass transfer. These systems are interesting as they may be progenitors to observed systems whose origins we are currently unsure of.
+	      </font></p>
       </div>
+
+<!-- END OF BSS -->	
 </div>
 
 
@@ -274,7 +280,6 @@
 
 
 <!-- Personal Projects -->
-
 	<div id="personalProjects" style="padding:25px 50px; max-width:1800px;background-color:black;">
 	  <h1 class="w3-text-light-grey">Personal Projects</h1>
       <hr style="width:310px" class="w3-opacity">
@@ -299,29 +304,26 @@
       <p><font size="+1">Using data from the NASA/ESA Hubble Space Telescope (click on image to see original post)
       </font></p>
       </div>
-</div>
+
+	<!-- END OF PERSONAL PROJECTS -->	
+	</div>
 
 
 	
-      <br>
-
-    <!-- End photo grid -->
+    <br>
 
 	<div style="height: 75px;background-color: transparent;"></div>
-	
-    </div>
-  <!-- End Portfolio Section -->
-	
-  </div>
 
-<!-- END PAGE CONTENT -->
-</div>
+
+	
+  <!-- END OF PAGE CONTENT -->
+  </div>
 
 <!-- BOTTOM BANNER -->
 <img src="images/BottomBanner.png" style="width:100%;">
 
-	<!-- SCRIPTS -->
-	<script src="assets/main.js"></script>
+<!-- SCRIPTS -->
+<script src="assets/main.js"></script>
 
 </body>
 </html>
