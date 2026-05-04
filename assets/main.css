@@ -168,7 +168,7 @@
 
 
 
-/* for small screens only (<600px) */
+/* for small screens only (<600px) vertical phones*/
 	/* Hide by default (for desktop/large screens) */
 		.mobile-only {
 		  display: none;
@@ -204,3 +204,50 @@
 		display:none!important;
 	  }  
   }
+
+
+/* for mid screens (801px - 2500, laptops) */
+	/* hide by default */
+/*  .mid-only {
+    display: none;
+  }
+
+  @media screen and (min-width: 801px) and (max-width: 2500px) {
+	  /* Show only on mid screens */
+/*    .mid-only {
+      display: block;
+    }
+
+	/* hide on mid screens */	
+/*	  .hide-mid{
+		display:none!important;
+	  }  
+  }
+*/
+
+
+
+
+
+/* for large screens (>2501px, monitors and up) */
+	/* hide by default */
+/*  .big-only {
+    display: none;
+  }
+
+  @media screen and (min-width: 2501px) {
+	  /* Show only on big screens */
+/*    .big-only {
+      display: block;
+    }
+
+	/* hide on big screens */	
+/*	  .hide-big{
+		display:none!important;
+	  }  
+  }
+*/
+
+
+
+
