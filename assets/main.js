@@ -49,8 +49,10 @@ function updateImage() {
   const img = document.getElementById('display');
 
   // The "If" Logic
-  if (type === 'fruit' && color === 'red') {
-    img.src = '../images/AboutMePhoto.png';
+  if (type === 'Select Type' || color === 'Select Color') {
+    img.src = '../images/green.jpeg';
+  } else if (type === 'fruit' && color === 'red') {
+    img.src = '../images/AboutMePhoto.jpeg';  
   } else if (type === 'fruit' && color === 'green') {
     img.src = '../images/GraduationImage.jpeg';
   } else if (type === 'veg' && color === 'red') {
