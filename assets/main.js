@@ -61,7 +61,7 @@ function updateImage() {
     img.src = '../images/NSF.png';
   } else if (type === 'veg' && color === 'green') {
     //img.src = '../images/ILSGC.png';
-    video.src = "../images/potentialPlotMovie.mp4";
+    video.src = "../images/ILSGC.png";
     video.play();
   }
 }
