@@ -147,12 +147,12 @@
 	}
 
 	.hover-orange-coral:hover{
-	  background-color:#f8b59b; /* Change background color on hover */
+	  background-color:#ffd6b9; /* Change background color on hover */
 	  color: black;             /* Change text color on hover */
 	}
 
 
-/* adding abutter yellow color */
+/* adding a butter yellow color */
 	.butter-yellow{
 	  background-color:#fff275; /* Change background color on hover */
 	  color: black;             /* Change text color on hover */
@@ -160,6 +160,12 @@
 
 	.dark-butter-yellow{
 	  background-color:#f3da65; /* Change background color on hover */
+	  color: black;             /* Change text color on hover */
+	}
+
+/* adding a sea green color */
+	.sea-green{
+	  background-color:#2e8b57; /* Change background color on hover */
 	  color: black;             /* Change text color on hover */
 	}
 
