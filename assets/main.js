@@ -68,22 +68,31 @@ function updateImage() {
 // for movies, not ready yet only testing with images
     const massratio = document.getElementById('massratioSelect');
     const view = document.getElementById('viewSelect');
+    const orbit = document.getElementById('orbitSelect');
     const video = document.getElementById('myVideo');
 
+
     function updateVideo() {
-        // Condition: if both specific options are selected
+        // Setting default
         if (massratio.value === " ") {
             video.src = "";
             video.play();
-        if (view.value === " ") {
+        } else if (view.value === " ") {
             video.src = "";
             video.play();
+        } else if (view.orbit === " ") {
+            video.src = "";
+            video.play();  
+
+        // Setting 1:5 videos  
         } else if (massratio.value === "02" && view.value === "full") {
             video.src = "../movies/LMC_2halo_10M_r0-2.mp4";
             video.play();
         } else if (massratio.value === "02" && view.value === "close") {
             video.src = "../movies/LMC_2halo_10M_r0-2_closeup.mp4";
             video.play();  
+
+        // Setting 1:10 videos  
         } else if (massratio.value === "01" && view.value === "full") {
             video.src = "../movies/LMC_2halo_10M_r0-1.mp4";
             video.play();  
@@ -91,7 +100,7 @@ function updateImage() {
             video.src = "../movies/LMC_2halo_10M_r0-1_closeup.mp4";
             video.play();
         }
-        // Add more logic for other combinations here
+
     }
 
     // Listen for changes on both dropdowns
