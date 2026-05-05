@@ -80,7 +80,7 @@ function updateImage() {
         } else if (view.value === " ") {
             video.src = "";
             video.play();
-        } else if (view.orbit === " ") {
+        } else if (orbit.value === " ") {
             video.src = "";
             video.play();  
 
