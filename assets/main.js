@@ -42,7 +42,7 @@ setInterval(showNextImage, 800);
 
 
 
-// for choosing movies
+// for choosing images
 function updateImage() {
   const type = document.getElementById('type').value;
   const color = document.getElementById('color').value;
