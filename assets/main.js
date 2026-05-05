@@ -39,3 +39,23 @@ function showNextImage() {
 
 // change image every 1 second (1000 ms)
 setInterval(showNextImage, 800);
+
+
+
+// for choosing movies
+function updateImage() {
+  const type = document.getElementById('type').value;
+  const color = document.getElementById('color').value;
+  const img = document.getElementById('display');
+
+  // The "If" Logic
+  if (type === 'fruit' && color === 'red') {
+    img.src = '../images/AboutMePhoto.png';
+  } else if (type === 'fruit' && color === 'green') {
+    img.src = '../images/GraduationImage.jpeg';
+  } else if (type === 'veg' && color === 'red') {
+    img.src = 'NSF.png';
+  } else if (type === 'veg' && color === 'green') {
+    img.src = 'ILSGC.png';
+  }
+}
