@@ -124,5 +124,6 @@ function updateImage() {
     }
 
     // Listen for changes on both dropdowns
-    category.addEventListener('change', updateVideo);
-    action.addEventListener('change', updateVideo);
+    massratio.addEventListener('change', updateVideo);
+    view.addEventListener('change', updateVideo);
+    orbit.addEventListener('change', updateVideo);
