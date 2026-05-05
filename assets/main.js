@@ -85,21 +85,41 @@ function updateImage() {
             video.play();  
 
         // Setting 1:5 videos  
-        } else if (massratio.value === "02" && view.value === "full") {
+        } else if (massratio.value === "02" && view.value === "full" && orbit.value === "fid") {
             video.src = "../movies/LMC_2halo_10M_r0-2.mp4";
             video.play();
-        } else if (massratio.value === "02" && view.value === "close") {
+        } else if (massratio.value === "02" && view.value === "close" && orbit.value === "fid") {
             video.src = "../movies/LMC_2halo_10M_r0-2_closeup.mp4";
             video.play();  
 
-        // Setting 1:10 videos  
-        } else if (massratio.value === "01" && view.value === "full") {
+        // add error if they don't choose fiducial orbit for 1:5 ratio
+
+        // Setting 1:10 
+          //fiducial orbit  
+        } else if (massratio.value === "01" && view.value === "full" && orbit.value === "fid") {
             video.src = "../movies/LMC_2halo_10M_r0-1.mp4";
             video.play();  
-        } else if (massratio.value === "01" && view.value === "close") {
+        } else if (massratio.value === "01" && view.value === "close" && orbit.value === "fid") {
             video.src = "../movies/LMC_2halo_10M_r0-1_closeup.mp4";
             video.play();
         }
+          //circular orbit  
+        } else if (massratio.value === "01" && view.value === "full" && orbit.value === "circ") {
+            video.src = "../movies/LMC_2halo_10M_r0-1_circ.mp4";
+            video.play();  
+        } else if (massratio.value === "01" && view.value === "close" && orbit.value === "circ") {
+            video.src = "../movies/LMC_2halo_10M_r0-1_circ_closeup.mp4";
+            video.play();
+        }
+          //radial orbit  
+        } else if (massratio.value === "01" && view.value === "full" && orbit.value === "rad") {
+            video.src = "../movies/LMC_2halo_10M_r0-1_radial.mp4";
+            video.play();  
+        } else if (massratio.value === "01" && view.value === "close" && orbit.value === "rad") {
+            video.src = "../movies/LMC_2halo_10M_r0-1_radial_closeup.mp4";
+            video.play();
+        }
+        
 
     }
 
