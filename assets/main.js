@@ -66,14 +66,14 @@ function updateImage() {
 
 
 // for movies, not ready yet only testing with images
-/*    const category = document.getElementById('categorySelect');
+    const category = document.getElementById('categorySelect');
     const action = document.getElementById('actionSelect');
     const video = document.getElementById('myVideo');
 
     function updateVideo() {
         // Condition: if both specific options are selected
         if (category.value === "nature" && action.value === "slow") {
-            video.src = "nature_slow.mp4";
+            video.src = "../movies/potentialPlotMovie.mp4";
             video.play();
         } else if (category.value === "tech" && action.value === "fast") {
             video.src = "tech_fast.mp4";
@@ -85,5 +85,3 @@ function updateImage() {
     // Listen for changes on both dropdowns
     category.addEventListener('change', updateVideo);
     action.addEventListener('change', updateVideo);
-
-*/  
