@@ -152,6 +152,19 @@
 	}
 
 
+/* adding abutter yellow color */
+	.butter-yellow{
+	  background-color:#fff275; /* Change background color on hover */
+	  color: black;             /* Change text color on hover */
+	}
+
+	.dark-butter-yellow{
+	  background-color:#f3da65; /* Change background color on hover */
+	  color: black;             /* Change text color on hover */
+	}
+
+
+
 /* slideshow code */
 	.slideshow-container {
 	  display: flex;
