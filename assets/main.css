@@ -132,8 +132,8 @@
 
 /* adding a pale purple hover */
 	.hover-pale-purple:hover {
-	  background-color:#966fd6; /* Change background color on hover */
-	  color: black;             /* Change text color on hover */
+	  background-color:#966fd6!important; /* Change background color on hover */
+	  color: black!important;             /* Change text color on hover */
 	}
 
 /* adding an orange coral color */
@@ -143,8 +143,8 @@
 	}
 
 	.hover-orange-coral:hover{
-	  background-color:#FFDBBB; /* Change background color on hover */
-	  color: black;             /* Change text color on hover */
+	  background-color:#FFDBBB!important; /* Change background color on hover */
+	  color: black!important;             /* Change text color on hover */
 	}
 
 
