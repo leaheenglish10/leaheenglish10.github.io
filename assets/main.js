@@ -54,7 +54,7 @@ function updateImage() {
   } else if (color === 'default') {
     img.src = '../images/green.jpeg'; 
   } else if (type === 'fruit' && color === 'red') {
-    img.src = '../images/AboutMePhoto.jpeg';  
+    img.src = '../images/AboutMePhoto.png';  
   } else if (type === 'fruit' && color === 'green') {
     img.src = '../images/GraduationImage.jpeg';
   } else if (type === 'veg' && color === 'red') {
