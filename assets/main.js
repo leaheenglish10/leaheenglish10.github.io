@@ -49,9 +49,9 @@ function updateImage() {
   const img = document.getElementById('display');
 
   // The "If" Logic
-  if (type === 'Select Type') {
+  if (type === 'default') {
     img.src = '../images/green.jpeg';
-  } else if (color === 'Select Color') {
+  } else if (color === 'default') {
     img.src = '../images/green.jpeg'; 
   } else if (type === 'fruit' && color === 'red') {
     img.src = '../images/AboutMePhoto.jpeg';  
