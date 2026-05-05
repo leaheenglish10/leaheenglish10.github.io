@@ -60,9 +60,7 @@ function updateImage() {
   } else if (type === 'veg' && color === 'red') {
     img.src = '../images/NSF.png';
   } else if (type === 'veg' && color === 'green') {
-    //img.src = '../images/ILSGC.png';
-    video.src = "../images/ILSGC.png";
-    video.play();
+    img.src = '../images/ILSGC.png';
   }
 }
 
