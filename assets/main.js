@@ -72,16 +72,16 @@ function updateImage() {
 
     function updateVideo() {
         // Condition: if both specific options are selected
-        if (category.value === "1:5" && action.value === "full") {
+        if (category.value === "02" && action.value === "full") {
             video.src = "../movies/LMC_2halo_10M_r0-2.mp4";
             video.play();
-        } else if (category.value === "1:5" && action.value === "close") {
+        } else if (category.value === "02" && action.value === "close") {
             video.src = "../movies/LMC_2halo_10M_r0-2_closeup.mp4";
             video.play();  
-        } else if (category.value === "1:10" && action.value === "full") {
+        } else if (category.value === "01" && action.value === "full") {
             video.src = "../movies/LMC_2halo_10M_r0-1.mp4";
             video.play();  
-        } else if (category.value === "1:10" && action.value === "close") {
+        } else if (category.value === "01" && action.value === "close") {
             video.src = "../movies/LMC_2halo_10M_r0-1_closeup.mp4";
             video.play();
         }
