@@ -54,8 +54,8 @@ function updateImage() {
   } else if (type === 'fruit' && color === 'green') {
     img.src = '../images/GraduationImage.jpeg';
   } else if (type === 'veg' && color === 'red') {
-    img.src = 'NSF.png';
+    img.src = '../images/NSF.png';
   } else if (type === 'veg' && color === 'green') {
-    img.src = 'ILSGC.png';
+    img.src = '../images/ILSGC.png';
   }
 }
