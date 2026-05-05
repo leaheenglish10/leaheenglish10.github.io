@@ -140,6 +140,18 @@
 	  color: black;             /* Change text color on hover */
 	}
 
+/* adding an orange coral color */
+	.orange-coral{
+	  background-color:#ff8559; /* Change background color on hover */
+	  color: black;             /* Change text color on hover */
+	}
+
+	.hover-orange-coral:hover{
+	  background-color:#f8b59b; /* Change background color on hover */
+	  color: black;             /* Change text color on hover */
+	}
+
+
 /* slideshow code */
 	.slideshow-container {
 	  display: flex;
