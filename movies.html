@@ -103,25 +103,38 @@
 
 	<p>pratice...</p>
 	  
-	<!-- Dropdowns -->
-		<select id="type" onchange="updateImage()">
-		  <option value="default">Select Type</option>
-		  <option value="fruit">Fruit</option>
-		  <option value="veg">Vegetable</option>
+	<!-- for selecting movies -->
+	  	<!-- Mass Ratio Dropdown -->
+		<select id="massratioSelect">
+		    <option value=" ">Select Mass Ratio</option>
+		    <option value="02">1:5</option>
+		    <option value="01">1:10</option>
+		</select>
+
+	  	<!-- Orbit Dropdown -->
+		<select id="viewSelect">
+		    <option value=" ">Select Orbit</option>
+		    <option value="fid">Fiducial</option>
+		    <option value="circ">Circular (only for 1:10 mass ratio)</option>
+			<option value="rad">Radial (only for 1:10 mass ratio)</option>
 		</select>
 		
-		<select id="color" onchange="updateImage()">
-		  <option value="default">Select Color</option>	
-		  <option value="red">Red</option>
-		  <option value="green">Green</option>
+		<!-- View Dropdown -->
+		<select id="viewSelect">
+		    <option value=" ">Select View</option>
+		    <option value="full">Full View</option>
+		    <option value="close">Zoom In View</option>
 		</select>
-	  
-		<br />	
-	  	<br />
-	  
-		<!-- Image Placeholder -->
-		<img id="display" src="images/green.jpeg" style="width:200px;">
-			<br />	
+
+	  <br />	
+	  <br />
+		
+		<!-- Video Player -->
+		<video id="myVideo" width="480" height="360" controls>
+		    <source id="videoSource" src=" " type="video/mp4">
+		    Your browser does not support the video tag.
+		</video>
+	<br />	
 
 
 	<!-- END OF SIMULATIONS SECTION -->  
