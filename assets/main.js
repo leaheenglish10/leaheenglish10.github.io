@@ -74,13 +74,13 @@ function updateImage() {
 
     function updateVideo() {
         // Setting default
-        if (massratio.value === " ") {
+        if (massratio.value === "default") {
             video.src = "";
             video.play();
-        } else if (view.value === " ") {
+        } else if (view.value === "default") {
             video.src = "";
             video.play();
-        } else if (orbit.value === " ") {
+        } else if (orbit.value === "default") {
             video.src = "";
             video.play();  
 
