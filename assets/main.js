@@ -65,8 +65,10 @@ function updateImage() {
 }
 
 
-// for movies, not ready yet only testing with images
-    const massratio = document.getElementById('massratioSelect');
+// old js movie code
+ 
+
+/*    const massratio = document.getElementById('massratioSelect');
     const view = document.getElementById('viewSelect');
     const orbit = document.getElementById('orbitSelect');
     const video = document.getElementById('myVideo');
@@ -127,3 +129,55 @@ function updateImage() {
     massratio.addEventListener('change', updateVideo);
     view.addEventListener('change', updateVideo);
     orbit.addEventListener('change', updateVideo);
+
+
+    */
+
+// New JS movie code
+const massratio = document.getElementById('massratioSelect');
+const view = document.getElementById('viewSelect');
+const orbit = document.getElementById('orbitSelect');
+const video = document.getElementById('myVideo');
+
+const videoMap = {
+    "02_full_fid": "../movies/LMC_2halo_10M_r0-2.mp4",
+    "02_close_fid": "../movies/LMC_2halo_10M_r0-2_closeup.mp4",
+
+    "01_full_fid": "../movies/LMC_2halo_10M_r0-1.mp4",
+    "01_close_fid": "../movies/LMC_2halo_10M_r0-1_closeup.mp4",
+
+    "01_full_circ": "../movies/LMC_2halo_10M_r0-1_circ.mp4",
+    "01_close_circ": "../movies/LMC_2halo_10M_r0-1_circ_closeup.mp4",
+
+    "01_full_rad": "../movies/LMC_2halo_10M_r0-1_radial.mp4",
+    "01_close_rad": "../movies/LMC_2halo_10M_r0-1_radial_closeup.mp4"
+};
+
+function updateVideo() {
+    // guard clause
+    if (massratio === "default" || view === "default" || orbit === "default") {
+        video.src = "";
+        return;
+    }
+
+    const key = `${massratio}_${view}_${orbit}`;
+    const src = videoMap[key];
+
+    if (src) {
+        video.src = src;
+        video.play();
+    } else {
+        // handle invalid combos (like 1:5 + non-fid orbit)
+        video.src = "";
+        console.warn("No video for selection:", key);
+    }
+
+    if (massratio === "02" && orbit !== "fid") { //look into disabling options if 1:5 orbit is chosen
+      alert("For 1:5 mass ratio, only the fiducial orbit is available.");
+      return;
+  }
+}
+
+massratio.addEventListener('change', updateVideo);
+view.addEventListener('change', updateVideo);
+orbit.addEventListener('change', updateVideo);
