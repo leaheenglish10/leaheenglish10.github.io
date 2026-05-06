@@ -42,27 +42,7 @@ setInterval(showNextImage, 800);
 
 
 
-// for choosing images
-function updateImage() {
-  const type = document.getElementById('type').value;
-  const color = document.getElementById('color').value;
-  const img = document.getElementById('display');
 
-  // The "If" Logic
-  if (type === 'default') {
-    img.src = '../images/green.jpeg';
-  } else if (color === 'default') {
-    img.src = '../images/green.jpeg'; 
-  } else if (type === 'fruit' && color === 'red') {
-    img.src = '../images/AboutMePhoto.png';  
-  } else if (type === 'fruit' && color === 'green') {
-    img.src = '../images/GraduationImage.jpeg';
-  } else if (type === 'veg' && color === 'red') {
-    img.src = '../images/NSF.png';
-  } else if (type === 'veg' && color === 'green') {
-    img.src = '../images/ILSGC.png';
-  }
-}
 
 
 
