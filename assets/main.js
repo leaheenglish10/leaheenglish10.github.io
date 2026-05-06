@@ -134,8 +134,8 @@ function updateImage() {
     */
 
 // New JS movie code
-const simulation = document.getElementById('simulationSelect').value;
-const view = document.getElementById('viewSelect').value;
+const simulationSelect = document.getElementById('simulationSelect');
+const viewSelect = document.getElementById('viewSelect');
 const video = document.getElementById('myVideo');
 
 const videoMap = {
@@ -153,6 +153,8 @@ const videoMap = {
 };
 
 function updateVideo() {
+  const simulation = simulationSelect.value;
+  const view = viewSelect.value;
     // guard clause
     if (simulation === "default" || view === "default") {
         video.src = "";
@@ -173,5 +175,5 @@ function updateVideo() {
 
 }
 
-simulation.addEventListener('change', updateVideo);
-view.addEventListener('change', updateVideo);
+simulationSelect.addEventListener('change', updateVideo);
+viewSelect.addEventListener('change', updateVideo);
