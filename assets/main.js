@@ -133,10 +133,10 @@ function updateImage() {
 
     */
 
-// New JS movie code
+// select simulations movie
 const simulationSelect = document.getElementById('simulationSelect');
 const viewSelect = document.getElementById('viewSelect');
-const video = document.getElementById('myVideo');
+const video = document.getElementById('simulationsVideo');
 
 const videoMap = {
     "02fid_full": "../movies/LMC_2halo_10M_r0-2.mp4",
