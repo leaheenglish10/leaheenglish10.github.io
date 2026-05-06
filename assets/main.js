@@ -75,7 +75,7 @@ function updateSimulationsVideo() {
     }
 
     const key = `${simulation}_${view}`;
-    const src = SimulationsVideoMap[key];
+    const src = simulationsVideoMap[key];
 
     if (src) {
         simulationsVideo.src = src;
