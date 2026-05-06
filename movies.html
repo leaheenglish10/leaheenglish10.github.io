@@ -104,19 +104,13 @@
 	<p>pratice...</p>
 	  
 	<!-- for selecting movies -->
-	  	<!-- Mass Ratio Dropdown -->
-		<select id="massratioSelect">
-		    <option value="default">Select Mass Ratio</option>
-		    <option value="02">1:5</option>
-		    <option value="01">1:10</option>
-		</select>
-
-	  	<!-- Orbit Dropdown -->
-		<select id="orbitSelect">
-		    <option value="default">Select Orbit</option>
-		    <option value="fid">Fiducial</option>
-		    <option value="circ">Circular (only for 1:10 mass ratio)</option>
-			<option value="rad">Radial (only for 1:10 mass ratio)</option>
+	  	<!-- Simulation Dropdown -->
+		<select id="simulationSelect">
+		    <option value="default">Select Simulation</option>
+		    <option value="02">1:5 mass ratio, fiducial orbit</option>
+		    <option value="01">1:10 mass ratio, fiducial orbit</option>
+			<option value="01">1:10 mass ratio, circular orbit</option>
+			<option value="01">1:10 mass ratio, radial orbit</option>
 		</select>
 		
 		<!-- View Dropdown -->
@@ -125,6 +119,23 @@
 		    <option value="full">Full View</option>
 		    <option value="close">Zoom In View</option>
 		</select>
+
+	  <!-- Potential Dropdown
+		<select id="potSelect">
+			<option value="default">Select Potential</option>
+			<option value="full">with potential</option>
+			<option value="close">without potential</option>
+		</select> -->
+
+	  <!-- streams Dropdown
+		<select id="streamsSelect">
+			<option value="default">Select Streams Shown</option>
+			<option value="full">all streams</option>
+			<option value="close">subset of streams</option>
+	  		<option value="close">streams with above average radius change</option>
+	  		<option value="close">streams with below average radius change</option>
+	  		<option value="close">streams in energy histogram peaks</option>
+		</select> -->
 
 	  <br />	
 	  <br />
