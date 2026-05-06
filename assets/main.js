@@ -70,7 +70,7 @@ function updateSimulationsVideo() {
   const view = viewSelect.value;
     // guard clause
     if (simulation === "default" || view === "default") {
-        video.src = "";
+        simulationsVideo.src = "";
         return;
     }
 
@@ -79,10 +79,10 @@ function updateSimulationsVideo() {
 
     if (src) {
         simulationsVideo.src = src;
-        simulationsVideoideo.play();
+        simulationsVideo.play();
     } else {
         // handle invalid combos (like 1:5 + non-fid orbit)
-        simulationsVideoideo.src = "";
+        simulationsVideo.src = "";
         console.warn("No video for selection:", key);
     }
 
