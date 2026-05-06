@@ -134,10 +134,14 @@ function updateImage() {
     */
 
 // New JS movie code
-const massratio = document.getElementById('massratioSelect');
-const view = document.getElementById('viewSelect');
-const orbit = document.getElementById('orbitSelect');
+const massratioSelect = document.getElementById('massratioSelect');
+const viewSelect = document.getElementById('viewSelect');
+const orbitSelect = document.getElementById('orbitSelect');
 const video = document.getElementById('myVideo');
+
+const massratioVal = massratioSelect.value;
+const viewVal = viewSelect.value;
+const orbitVal = orbitSelect.value;
 
 const videoMap = {
     "02_full_fid": "../movies/LMC_2halo_10M_r0-2.mp4",
