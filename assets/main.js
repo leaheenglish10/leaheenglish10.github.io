@@ -52,17 +52,17 @@ const viewSelect = document.getElementById('viewSelect');
 const simulationsVideo = document.getElementById('simulationsVideo');
 
 const simulationsVideoMap = {
-    "02fid_full": "../movies/LMC_2halo_10M_r0-2.mp4",
-    "02fid_close": "../movies/LMC_2halo_10M_r0-2_closeup.mp4",
+    "02fid_full": "../movies/r0-2-fullView.mp4",
+    "02fid_close": "../movies/r0-2-zoomIn.mp4",
 
-    "01fid_full": "../movies/LMC_2halo_10M_r0-1.mp4",
-    "01fid_close": "../movies/LMC_2halo_10M_r0-1_closeup.mp4",
+    "01fid_full": "../movies/r0-1-fullView.mp4",
+    "01fid_close": "../movies/r0-1-zoomIn.mp4",
 
-    "01circ_full": "../movies/LMC_2halo_10M_r0-1_circ.mp4",
-    "01circ_close": "../movies/LMC_2halo_10M_r0-1_circ_closeup.mp4",
+    "01circ_full": "../movies/r0-1_circ-fullView.mp4",
+    "01circ_close": "../movies/r0-1_circ-zoomIn.mp4",
 
-    "01rad_full": "../movies/LMC_2halo_10M_r0-1_radial.mp4",
-    "01rad_close": "../movies/LMC_2halo_10M_r0-1_radial_closeup.mp4"
+    "01rad_full": "../movies/r0-1_radial-fullView.mp4",
+    "01rad_close": "../movies/r0-1_radial-zoomIn.mp4"
 };
 
 function updateSimulationsVideo() {
